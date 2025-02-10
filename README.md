@@ -104,7 +104,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ## 📢 Feedback & Support
 
-💌 **Email:** [support@phishguard.com](mailto:anotnet.shivam@gmail.com)  
+💌 **Email:** [anotnet.shivam@gmail.com](mailto:anotnet.shivam@gmail.com)  
 🐦 **Twitter:** [@PhishGuardApp](https://twitter.com/dreamyshivam)  
 📌 **GitHub Issues:** Open an issue in this repository.  
 
