@@ -1,0 +1,154 @@
+/* General Styles */
+.popup-body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #00ffea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Fixed height for the popup */
+  width: 350px; /* Fixed width for the popup */
+  overflow: hidden;
+}
+
+.popup-container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 255, 234, 0.5);
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+/* .logo {
+  width: 100px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 10px #00ffea);
+} */
+
+h1 {
+  font-size: 1.8rem;
+  color: #00ffea;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #00ffea;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+  color: #ffffff;
+  text-shadow: 0 0 5px #00ffea;
+  margin: 5px 0 0;
+}
+
+/* Status Section */
+.status-section {
+  margin-bottom: 30px;
+}
+
+#status-indicator {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 15px auto;
+  box-shadow: 0 0 20px rgba(0, 255, 234, 0.8);
+  transition: all 0.3s ease;
+}
+
+.indicator.green {
+  background: #28a745;
+  box-shadow: 0 0 20px #28a745;
+}
+
+.indicator.yellow {
+  background: #ffc107;
+  box-shadow: 0 0 20px #ffc107;
+}
+
+#status-message {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 10px;
+  animation: fadeInText 1s ease-in-out;
+}
+
+/* Actions Section */
+.actions-section {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.action-button {
+  position: relative;
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: #00ffea;
+  background: transparent;
+  border: 2px solid #00ffea;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.action-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00ffea;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.action-button:hover::before {
+  transform: scaleX(1);
+}
+
+.action-button:hover {
+  color: #000;
+}
+
+/* Footer */
+footer {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-shadow: 0 0 5px #00ffea;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

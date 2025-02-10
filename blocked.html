@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHISHGUARD - Security Alert</title>
+  <link rel="stylesheet" href="static/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body class="blocked-page">
+  <div class="cyber-overlay"></div>
+  
+  <main class="security-container">
+    <header class="security-header">
+      <img src="static/images/logo.png" alt="PHISHGUARD" class="logo" data-aos="zoom-in">
+      <div class="header-content" data-aos="fade-up">
+        <h1 class="product-title">PHISHGUARD</h1>
+        <p class="product-tagline">Advanced Threat Protection System</p>
+      </div>
+    </header>
+
+    <section class="alert-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="severity-indicator" id="warning-indicator">
+        <div class="glow-pulse"></div>
+      </div>
+      <h2 id="warning-title" class="alert-title"></h2>
+      <p id="warning-message" class="alert-description"></p>
+    </section>
+
+    <div class="action-grid" data-aos="fade-up" data-aos-delay="400">
+      <button id="go-back-button" class="action-button">
+        <span class="button-icon">←</span>
+        <span class="button-text">Safe Return</span>
+      </button>
+      <button id="close-tab-button" class="action-button danger">
+        <span class="button-icon">⨯</span>
+        <span class="button-text">Terminate Session</span>
+      </button>
+      <button id="report-phish-button" class="action-button warning">
+        <span class="button-icon">!</span>
+        <span class="button-text">Report Threat</span>
+      </button>
+      <button id="continue-button" class="action-button continue">
+        <span class="button-icon">→</span>
+        <span class="button-text">Continue Browsing</span>
+      </button>
+    </div>
+
+    <footer class="security-footer" data-aos="fade-up" data-aos-delay="600">
+      <p>© 2025 PHISHGUARD SYSTEMS</p>
+    </footer>
+  </main>
+
+  <script src="../static/js/blocked.js"></script>
+</body>
+</html>
+

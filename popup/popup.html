@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHISHGUARD</title>
+  <link rel="stylesheet" href="../static/css/styles.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body class="popup-body">
+  <div class="popup-container">
+    <header>
+      <img src="../static/images/logo.png" alt="PHISHGUARD Logo" class="logo" style="animation: none;  margin-top: 50px;">
+      <h1>PHISHGUARD</h1>
+      <p>Real-Time Phishing Detection</p>
+    </header>
+    <main>
+      <section class="status-section">
+        <h2>Status</h2>
+        <div id="status-indicator" class="indicator green"></div>
+        <p id="status-message">Protection is active.</p>
+      </section>
+      <section class="actions-section">
+        <button id="toggle-protection" class="action-button neon-button">Stop Protection</button>
+        <button id="refresh-button" class="action-button neon-button">Refresh</button>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 PHISHGUARD. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
